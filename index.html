@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!-- Boots-trap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6be30ce025.js"></script>
+    <!-- My links -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <!-- icons -->
+    <link rel="shortcut icon" href="/assets/images/icon.png" />
+
+    <title>Crypto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Responsive Nav bar for 580px -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Nav  -->
+            <div class=" navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a id="displayCoinsBtn" class="nav-link" href="#">Coins <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="displayChartsBtn" class="nav-link" href="#">Live Chart <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="displayAboutBtn" class="nav-link" href="#">About me<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+                <!-- Search option-->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search..." id="inputSearch"
+                        aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="button" id="searchBtn"><i
+                            class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Titles and stars effect -->
+        <section id="parallaxSection">
+            <div class="parallax">
+
+                <div id="websiteTitle">
+                    <div class="animate sloppy">
+                        <span>C</span><span>r</span><span>y</span><span>p</span><span>t</span><span>o</span><span>n</span><span>i</span><span>t</span><span>e</span><span><i
+                                class="fab fa-bitcoin"></i></span>
+                    </div>
+                    <div id='sectionTitle'>
+                        <h2>Coins</h2>
+                    </div>
+                </div>
+
+                <section class="cover-full-width" data-150-top="background-position: 0px 0px;"
+                    data-top="background-position: 0px -50px;">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                </section>
+            </div>
+            <div class="content">
+                <h3>Second Porject <i class="fas fa-satellite"></i></h3>
+                <h4><i class="fas fa-meteor"></i> Ajax-jQeury-API</h4>
+            </div>
+        </section>
+        <img id="lodaing" src="https://thumbs.gfycat.com/FortunatePeskyEider-small.gif" alt=""> <!-- Loading gif -->
+
+        <!-- Content Divs -->
+        <div id="container" class="container">
+            <div class="row"></div> <!-- Coins-Cards div -->
+        </div>
+        <div id="aboutDiv"></div> <!-- About div -->
+        <div id="coinsModal"></div> <!-- Modal div -->
+        <div id="chartContainer" style="width: 100%;height: 400px;" class="container" hidden></div> <!-- Chart div -->
+    </main>
+
+    <footer>
+        <p>© 2019 Omer Shaharabani All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
